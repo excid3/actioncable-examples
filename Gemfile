@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
+ruby '2.3.0'
 
-gem 'rails', '5.0.0.beta3'
+gem 'rails', '~> 5.0.0.beta3'
 gem 'sprockets-rails', github: "rails/sprockets-rails"
 
-gem 'sqlite3'
+gem 'pg'
 gem 'redis'
 gem 'puma'
 
@@ -23,3 +24,5 @@ group :development do
   gem 'web-console', github: 'rails/web-console'
   gem 'spring'
 end
+
+gem 'rails_12factor', '~> 0.0.3'

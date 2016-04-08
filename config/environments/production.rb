@@ -76,5 +76,9 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Set Action Cable server url for consumer connection
-  # config.action_cable.url = 'ws://cable.example.com:28080'
+  config.action_cable.url = 'ws://actioncable-gorails.herokuapp.com/cable'
+
+  config.action_cable.allowed_request_origins = ['http://actioncable-gorails.herokuapp.com']
 end
+
+
